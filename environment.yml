@@ -1,0 +1,13 @@
+name: causal
+channels:
+- conda-forge
+- anaconda
+dependencies:
+- python=2.7
+- pillow
+- tqdm
+- requests
+- tensorflow-gpu=1.1.0
+- pandas
+- jupyter
+- scipy
