@@ -104,9 +104,9 @@ def add_splits(base_path):
         os.makedirs(test_dir)
 
     # these constants based on the standard celebA splits
-    NUM_EXAMPLES = 202599
-    TRAIN_STOP = 162770
-    VALID_STOP = 182637
+    NUM_EXAMPLES = 11788
+    TRAIN_STOP = 8000
+    VALID_STOP = 10000
 
     for i in range(0, TRAIN_STOP):
         basename = "{:06d}.jpg".format(i+1)
@@ -124,6 +124,6 @@ def delete_top_line(txt_fname):
 
 if __name__ == '__main__':
     base_path = './data'
-    prepare_data_dir()
-    download_celeb_a(base_path)
+    # prepare_data_dir()
+    # download_celeb_a(base_path)
     add_splits(base_path)
